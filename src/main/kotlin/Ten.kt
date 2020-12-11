@@ -7,7 +7,6 @@ class Ten (private val fileName: String) {
             try { adapters.add(it.toInt()) } catch (e: Exception) { print(e.message)}
         }
         adapters.sort()
-        var outputVoltage = 0
         val cache = hashMapOf<Int, Long>()
         println(adapterJoining(adapters, 0, cache))
 
